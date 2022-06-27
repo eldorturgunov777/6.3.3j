@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
     private final List<Note> notesList = new ArrayList<>();
     private DatabaseHelper db;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -47,12 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
         notesList.addAll(db.getAllNotes());
 
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                showNoteDialog(false, null, -1);
-            }
-        });
+        fab.setOnClickListener(view -> showNoteDialog(false, null, -1));
     }
 
     private void showNoteDialog(final boolean shouldUpdate, final Note note, final int position) {
